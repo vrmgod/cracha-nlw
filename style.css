@@ -1,0 +1,76 @@
+/*seletor universal aplica em todos os elementos*/
+* {
+  margin: 0%;
+}
+
+html,
+body {
+  --gray: hsl(240, 9%, 89%);
+  --black: hsl(240, 6%, 13%);
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(images/background.svg);
+  width: 375px;
+  height: 100%;
+}
+.container {
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--gray);
+}
+
+.avatar {
+  width: auto;
+  margin: 11.5rem auto auto auto;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -1px;
+  z-index: 1;
+}
+
+.avatar > img {
+  clip-path: circle(45%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--gray);
+  margin-top: 1rem;
+  text-decoration: none;
+  /*alinhando bem ao meio*/
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 3rem;
+}
+
+ul {
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
