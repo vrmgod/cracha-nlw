@@ -18,9 +18,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 100%;
+  background: url(images/background.svg) no-repeat center/cover;
+
+  width: 100vw;
+  height: 100vw;
 }
 .container {
   max-width: auto;
